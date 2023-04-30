@@ -1,0 +1,22 @@
+Question1:
+Book1=int(input("enter number of Introduction to Python Programming books: "))
+Book2=int(input("enter number of Python Libraries Cookbook books: "))
+Book3=int(input("enter number of Data Science in Python books: "))
+Gst=12
+delivary_charges=250.00
+total_of_books=(float)(Book1*499.00+Book2*855.00+Book3*645.00)
+books_gst=total_of_books*(Gst/100)
+total_amount=total_of_books+books_gst+delivary_charges
+print(total_amount)
+
+
+
+Question2:
+s=input("enter string: ")
+a=s.lower()
+l=[]
+for i in a:
+    if i not in l:
+        l.append(i)
+b=",".join(l)        
+print(b)
